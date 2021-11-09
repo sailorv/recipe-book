@@ -2,3 +2,38 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
+h1,
+h2,
+h3 {
+  color: #1c1c1c;
+  margin-left: 0.25em;
+}
+
+
+/* Recipe Cards */
+.RecipeImage {
+  display: block;
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-repeat: no-repeat;
+}
+
+.RecipeCard:hover .RecipeImage {
+  box-shadow: 3px 3px 15px rgba(0,0,0,.3);
+}
+
+.RecipeTitle {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.RecipeDescription {
+  color: #999;
+}

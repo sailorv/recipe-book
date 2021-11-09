@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import Hero from './Components/Hero';
 import SearchForm from './Components/SearchForm';
 import SearchResults from './Components/SearchResults';
+import MoreRecipes from './Components/MoreRecipes';
 import useSpinner from './Hooks/useLoading';
 import RecipeService from './Services/RecipeService';
 
@@ -68,6 +69,7 @@ const App = () => {
             recipes={recipes}
             spinnerIcon={spinnerIcon}
           />
+          <MoreRecipes />
         </MainWrapper>
       </RecipeBook>
     </ThemeProvider>
