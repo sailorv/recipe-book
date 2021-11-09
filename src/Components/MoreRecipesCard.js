@@ -11,7 +11,7 @@ const MoreRecipeCard = styled.div`
   border-radius: 6px;
   margin: 1rem 0;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  width: 49%;
+  width: 48%;
   &:hover {
     cursor: pointer;
   }

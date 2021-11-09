@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import MoreRecipesCard from './MoreRecipesCard';
 
 const MoreRecipesWrapper = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,14 +30,14 @@ const MoreRecipes = () => {
   ];
 
   return (
-    <div>
+    <React.Fragment>
       <h2>Need some ideas? Try these recipes.</h2>
       <MoreRecipesWrapper>
         <MoreRecipesCard 
           someArray={someArray}
         />
-    </MoreRecipesWrapper>
-    </div>
+      </MoreRecipesWrapper>
+    </React.Fragment>
   )
   
 };

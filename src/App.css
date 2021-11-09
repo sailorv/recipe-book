@@ -14,20 +14,31 @@ h3 {
 /* Recipe Cards */
 .RecipeImage {
   display: block;
-  height: 400px;
+  height: 200px;
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 1em;
-  background-size: cover;
+  background-size: 100% 130%;
   background-position: center center;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 769px) {
+  .RecipeImage {
+    height: 400px;
+    background-size: 100% 130%;
+  }
+  
+}
+
 .RecipeCard:hover .RecipeImage {
   box-shadow: 3px 3px 15px rgba(0,0,0,.3);
+  background-size: 110% 140%;
 }
+
+
 
 .RecipeTitle {
   font-size: 1.2rem;

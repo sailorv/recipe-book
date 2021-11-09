@@ -6,6 +6,7 @@ const SpinnerContainer = styled.div`
 `;
 
 const Spinner = () => {
+
   return (
     <SpinnerContainer>
       <svg
@@ -16,115 +17,10 @@ const Spinner = () => {
         className="lds-ellipsis"
         style={{ background: 'none' }}
       >
-        <circle cx="84" cy="50" r="0.918799" fill="#ffb900">
-          <animate
-            attributeName="r"
-            values="10;0;0;0;0"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          ></animate>
-          <animate
-            attributeName="cx"
-            values="84;84;84;84;84"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          ></animate>
-        </circle>
-        <circle cx="80.8761" cy="50" r="10" fill="#fc636b">
-          <animate
-            attributeName="r"
-            values="0;10;10;10;0"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="-0.8s"
-          ></animate>
-          <animate
-            attributeName="cx"
-            values="16;16;50;84;84"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="-0.8s"
-          ></animate>
-        </circle>
-        <circle cx="46.8761" cy="50" r="10" fill="#1aafd0">
-          <animate
-            attributeName="r"
-            values="0;10;10;10;0"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="-0.4s"
-          ></animate>
-          <animate
-            attributeName="cx"
-            values="16;16;50;84;84"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="-0.4s"
-          ></animate>
-        </circle>
-        <circle cx="16" cy="50" r="9.0812" fill="#3be8b0">
-          <animate
-            attributeName="r"
-            values="0;10;10;10;0"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          ></animate>
-          <animate
-            attributeName="cx"
-            values="16;16;50;84;84"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          ></animate>
-        </circle>
-        <circle cx="16" cy="50" r="0" fill="#ffb900">
-          <animate
-            attributeName="r"
-            values="0;0;10;10;10"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          ></animate>
-          <animate
-            attributeName="cx"
-            values="16;16;16;50;84"
-            keyTimes="0;0.25;0.5;0.75;1"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
-            calcMode="spline"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          ></animate>
+        <circle cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke="#ffcb64" stroke-linecap="round" stroke-dashoffset="0" stroke-dasharray="100, 200">
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-dashoffset" values="0;-30;-124" dur="1.25s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-dasharray" values="0,200;110,200;110,200" dur="1.25s" repeatCount="indefinite"/>
         </circle>
       </svg>
     </SpinnerContainer>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SearchInput from './SearchInput';
-import SearchLog from './SearchLog';
+// import SearchLog from './SearchLog';
 import Ingredients from './Ingredients';
 import useForm from '../Hooks/useForm';
 
@@ -57,7 +57,7 @@ const SearchForm = ({ searches, setSearches }) => {
     <SearchFormContainer>
       <Form onSubmit={e => onSubmit(e)}>
         <SearchInput onChange={onChange} values={values} errors={errors} />
-        <Button className="btn"><i class="fas fa-search"></i></Button>
+        <Button className="btn"><i className="fas fa-search"></i></Button>
       </Form>
 
       {errors.ingredient && (
@@ -67,10 +67,10 @@ const SearchForm = ({ searches, setSearches }) => {
       )}
 
       <Ingredients searches={searches} setSearches={setSearches} />
-      {searches.length > 0 && (
+{/*      {searches.length > 0 && (
         <SearchLog searches={searches} setSearches={setSearches} />
       )}
-
+*/}
     </SearchFormContainer>
   );
 };

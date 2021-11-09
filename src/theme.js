@@ -25,4 +25,6 @@ const theme = {
   device: device
 };
 
+
+
 export default theme;

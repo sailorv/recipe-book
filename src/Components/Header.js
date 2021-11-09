@@ -40,11 +40,11 @@ const scrollToTop = () => {
 const Header = ({ appTitle }) => {
   return (
     <Head onClick={() => scrollToTop()}>
-      <Menu><i class="fas fa-bars"></i></Menu>
+      <Menu><i className="fas fa-bars"></i></Menu>
       <Title className="app-title">
         {appTitle}
       </Title>
-      <Bookmark><i class="far fa-bookmark"></i></Bookmark>
+      <Bookmark><i className="far fa-bookmark"></i></Bookmark>
     </Head>
   );
 };
