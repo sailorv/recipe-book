@@ -1,5 +1,6 @@
 # About
 This is a recipe finder built in React. 
+<p align="center">[View Demo](https://hello-recipe.netlify.app/)</p>
 
 ## Acknowledgements
  - This app uses the [Edamam Recipe Search API](https://www.edamam.com/).
