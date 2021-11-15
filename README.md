@@ -1,5 +1,5 @@
 <h1 align="center">About</h1>
-<p align="center>
+<p align="center">
     This is a recipe finder built in React. <br />
     <a href="https://hello-recipe.netlify.app/">View Demo</a>
 </p>
