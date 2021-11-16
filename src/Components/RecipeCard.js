@@ -41,12 +41,36 @@ const RecipeTitle = styled.p`
 `;
 
 const RecipeCard = ({ recipe }) => {
-  const { label, url } = recipe.recipe;
+  const { label, url, healthLabels } = recipe.recipe;
 
+  const vegetarianVegan = () => {
+    if (healthLabels.includes("Vegetarian") && !healthLabels.includes("Vegan")) {
+      return "#vegetarian";
+    } else if (healthLabels.includes("Vegan")) {
+      return "#vegan";
+    } else {
+      return "";
+    }
+  };
+
+  
+
+  const glutenFree = () => {
+    if (healthLabels.includes("Gluten-Free")) {
+      return "#gluten-free";
+    } else {
+      return "";
+    }
+  };
+
+  const gluten = glutenFree(healthLabels);
+  const vegetarian = vegetarianVegan(healthLabels);
+  
   return (
     <Card>
       <CardLink href={url} target="_blank">
         <RecipeTitle className="title">{label}</RecipeTitle>
+        <div>{gluten} {vegetarian}</div>
       </CardLink>
     </Card>
   );

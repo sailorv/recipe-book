@@ -12,5 +12,4 @@
 ## To-do list
 - Design the recipe cards
 - Add recipe image, description
-- Tags for gluten-free, vegan, and vegetarian
 - Add bookmark icon to recipe cards
