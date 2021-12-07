@@ -25,7 +25,7 @@ const MoreRecipes = () => {
     {
       name: 'Soup Season',
       image: 'https://images.unsplash.com/photo-1541095441899-5d96a6da10b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
-      text: 'some tex3t'
+      text: 'Soups are a comforting and convenient way to meal prep.'
     }
   ];
 
