@@ -11,6 +11,7 @@ const Head = styled.div`
   z-index: 2;
   padding: 0 2em;
   background: #fff;
+
 `;
 
 const Title = styled.span`
@@ -25,12 +26,14 @@ const Menu = styled.span`
   font-weight: 900;
   color: ${props => props.theme.primaryColor};
   flex-grow: 1;
+  visibility: hidden;
 `;
 
 const Bookmark = styled.span`
   font-size: 1.8em;
   font-weight: 900;
   color: ${props => props.theme.primaryColor};
+  visibility: hidden;
 `;
 
 const scrollToTop = () => {
